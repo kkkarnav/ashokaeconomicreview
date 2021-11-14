@@ -40,7 +40,7 @@ code {
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -87,12 +87,43 @@ header .subtitle {
   color: #000000;
 }
 
-header .line {
-    margin-top: 20px;
-    width: 100vw;
+header .single-line {
+    width: 98.9vw;
+    height: 1px;
+    border-top: 1px solid black;
+}
+
+header .double-line {
+    width: 98.9vw;
     height: 1px;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
+}
+
+header ul {
+  list-style-type: none;
+  margin: 20px 0 2px 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+header li {
+  width: calc((100% - 80px) / 4); 
+  float: left;
+}
+
+header li a {
+  display: block;
+  text-align: center;
+  padding: 0 40px;
+
+  font-size: 20px;
+  color: #000000;
+  text-decoration: none;
+}
+
+header li a:hover {
+  color: #650000;
 }
 
 .article_grid {
@@ -118,10 +149,15 @@ header .line {
 
   background-color: #650000;
   color: #ffffff;
-  min-height: 8vw;
+  min-height: 20;
+  width: 98.9vw;
 
-  padding: 20px 0;
-  margin: 10px 0 0 0;
+  padding: 10px 0;
+  margin: 0;
+}
+
+.banner h2, p {
+    margin: 10px 0;
 }
 
 .button {
@@ -137,8 +173,6 @@ header .line {
   font-size: 1rem;
   letter-spacing: 0.15rem;
   text-transform: uppercase;
-
-  box-shadow: 0.5px 4px #450000;
 
   transition: all 0.2s;
 }

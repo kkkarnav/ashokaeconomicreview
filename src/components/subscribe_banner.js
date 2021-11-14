@@ -1,6 +1,6 @@
 import React from "react";
 
-const Subscribe = () => {
+const SubscribeBanner = () => {
   return (
     <div className="banner">
       <p>Get regular updates from our newsletter!</p>
@@ -10,4 +10,4 @@ const Subscribe = () => {
   );
 };
 
-export default Subscribe;
+export default SubscribeBanner;
