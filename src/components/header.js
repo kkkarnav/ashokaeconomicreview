@@ -11,7 +11,7 @@ const Header = () => {
         <span className="subtitle">
           Ashoka University's Premier Student Run Economics Newspaper
         </span>
-        <span style={{float: "right"}}><Subscribe /></span>
+        <span><Subscribe /></span>
 
         <ul className="menu">
 

@@ -18,10 +18,10 @@ const Submit = () => {
   }, []);
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <Banner heading={"Submission Guidlines"} subheading={getSemester()} />
-        <h3>Get Featured</h3>
+    <div>
+      <Banner heading={"Submission Guidlines"} subheading={getSemester()} />
+      <div class="main_text">
+        <h2><span>Get Featured</span></h2>
         <p>
           We are currently accepting submissions for online articles for Monsoon
           2020. Following are important guidelines that authors must adhere to:
@@ -64,7 +64,7 @@ const Submit = () => {
           Name.'
         </p>
         <p>Alternatively, you can submit your document below. </p>
-      </header>
+      </div>
     </div>
   );
 };
