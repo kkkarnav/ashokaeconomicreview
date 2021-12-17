@@ -13,12 +13,13 @@ const Articles = () => {
   let article_data = [
     {
       link: "https://karnav.xyz/blog",
-      title: "title",
-      authors: ["author1", "author2", "author3"],
-      subtitle: "subtitle something something",
-      tags: ["tag1", "tag2"],
+      title: "An Economic View of German Nuclear Policy",
+      authors: ["Karnav Popat", "Gayatri Sapru", "Akshat Arora"],
+      subtitle: "A close look at Merkel's regressive positions",
+      tags: ["nuclear", "energy"],
       date: "September 11th, 2021",
       content: "content",
+      image: "./assets/img/main.jpg"
     },
     {
       link: "https://karnav.xyz/blog",
