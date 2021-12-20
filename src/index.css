@@ -93,13 +93,14 @@ header .subtitle {
   color: #000000;
 }
 
-header .single-line {
+.single-line {
     width: 98.9vw;
     height: 1px;
     border-top: 1px solid black;
+    margin: 0;
 }
 
-header .double-line {
+.double-line {
     width: 98.9vw;
     height: 1px;
     border-top: 1px solid black;
@@ -156,6 +157,11 @@ header li a:hover {
   grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
 }
 
+.article_grid a {
+  color:  #101010;
+  text-decoration: none;
+}
+
 .article_box {
   margin: 2%;
   padding: 2%;
@@ -165,13 +171,24 @@ header li a:hover {
   border-style: solid;
   box-shadow: 4px 6px 6px grey;
 
-  background-color: #ddddee;
+  background-color: #ffffff;
   color: #101010;
 }
 
-.article_grid a {
-  color:  #101010;
-  text-decoration: none;
+.article_box img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: auto;
+}
+
+.article_box h3 {
+  font-weight: 600;
+}
+
+.article_box h4 {
+  font-weight: 100;
 }
 
 .article_tag {

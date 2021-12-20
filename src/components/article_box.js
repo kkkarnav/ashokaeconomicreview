@@ -7,15 +7,18 @@ import "../index.css";
 const Article = (props) => {
   return (
     <div className="article_box">
-      <a href={props.article.link}>
-        <img src="./assets/img/main.jpg" width="300"/>
+        <a href={props.article.link}>
+          <img src="./assets/img/main.jpg" width="300"/>
+        </a>
         <p>
           {props.article.tags.map((tag) => {
             return <span className="article_tag">{tag}</span>;
           })}
         </p>
-
-        <h3>{props.article.title} </h3>
+        <a href={props.article.link}>
+          <h3>{props.article.title} </h3>
+        </a>
+        <div className="single-line"></div>
         <h4>{props.article.subtitle}</h4>
 
         <p className="article_byline">
@@ -26,7 +29,6 @@ const Article = (props) => {
             return <span> and {secondary_author}</span>;
           })}
         </p>
-      </a>
     </div>
   );
 };
