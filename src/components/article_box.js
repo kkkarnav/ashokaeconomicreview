@@ -10,20 +10,20 @@ const Article = (props) => {
         <a href={props.article.link}>
           <img src="./assets/img/main.jpg" width="300"/>
         </a>
-        <p>
+        <p style={{marginBottom: "10px"}}>
+          <br></br>
           {props.article.tags.map((tag) => {
             return <span className="article_tag">{tag}</span>;
           })}
         </p>
         <a href={props.article.link}>
-          <h3>{props.article.title} </h3>
+          <h3><span className="underlined">{props.article.title}</span></h3>
         </a>
-        <div className="single-line"></div>
         <h4>{props.article.subtitle}</h4>
 
         <p className="article_byline">
           {props.article.date}
-          {" | "}
+          <br></br>
           by {props.article.authors[0]}
           {props.article.authors.slice(1).map((secondary_author) => {
             return <span> and {secondary_author}</span>;

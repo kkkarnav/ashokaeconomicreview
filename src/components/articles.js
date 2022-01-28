@@ -81,8 +81,8 @@ const Articles = () => {
   }
 
   return (
-    <div>
-      <h3>AUER Articles</h3>
+    <div className="main_text">
+      <h2><span className="underlined">AUER Articles</span></h2>
       <div className="article_grid">{article_list}</div>
     </div>
   );

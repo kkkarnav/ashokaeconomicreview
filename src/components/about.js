@@ -15,9 +15,9 @@ const About = () => {
   }, []);
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>About</p>
+    <div>
+      <div className="main_text">
+        <h2><span className="underlined">About</span></h2>
         <p>
           Ashoka University Economic Review (AUER) is a premier peer-reviewed
           Economics publication run by the student body of Ashoka University in
@@ -47,7 +47,7 @@ const About = () => {
           position or policy of AUER staff or Ashoka University’s Economics
           Department and faculty in general.{" "}
         </p>
-      </header>
+      </div>
     </div>
   );
 };
