@@ -4,15 +4,8 @@ import ReactDOM from "react-dom";
 import "../index.css";
 
 const About = () => {
-  const [currentTime, setCurrentTime] = useState(0);
 
-  useEffect(() => {
-    fetch("/api/time")
-      .then((res) => res.json())
-      .then((data) => {
-        setCurrentTime(data.time);
-      });
-  }, []);
+  console.log("called");
 
   return (
     <div>
