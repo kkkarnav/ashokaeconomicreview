@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import ReactDOM from "react-dom";
+import PDFView from './pdf';
 
 import "../index.css";
 
@@ -15,11 +16,7 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>Home</p>
-        <p>The current time is {currentTime}.</p>
-      </header>
+    <div style={{paddingBottom: "55vh"}}>
     </div>
   );
 };

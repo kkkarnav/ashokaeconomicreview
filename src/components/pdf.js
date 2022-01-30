@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Document, Page } from 'react-pdf';
 
-function MyApp() {
+function PDFView() {
   const [numPages, setNumPages] = useState(null);
   const [pageNumber, setPageNumber] = useState(1);
 
@@ -12,7 +12,7 @@ function MyApp() {
   return (
     <div>
       <Document
-        file="../assets/pdf/vol1.pdf"
+        file="vol1.pdf"
         onLoadSuccess={onDocumentLoadSuccess}
       >
         <Page pageNumber={pageNumber} />
@@ -21,3 +21,5 @@ function MyApp() {
     </div>
   );
 }
+
+export default PDFView;
