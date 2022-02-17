@@ -16,7 +16,8 @@ const Home = () => {
   }, []);
 
   return (
-    <div style={{paddingBottom: "55vh"}}>
+    <div>
+      <PDFView/>
     </div>
   );
 };

@@ -168,6 +168,7 @@ header li a:hover {
   margin: 2%;
   padding: 2%;
 
+  border-radius: 5%;
   border-width: 1px;
   border-color: grey;
   border-style: solid;
@@ -176,6 +177,9 @@ header li a:hover {
   background-color: #ffffff;
   color: #101010;
 }
+.person_box {
+  margin: 10% !important;
+}
 
 .article_box img {
   display: block;
@@ -183,6 +187,7 @@ header li a:hover {
   margin-right: auto;
   width: 100%;
   height: auto;
+  border-radius: 5%;
 }
 
 .article_box h3 {

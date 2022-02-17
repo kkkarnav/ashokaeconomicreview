@@ -2,10 +2,35 @@ import React, { useState, useEffect } from "react";
 import ReactDOM from "react-dom";
 
 import "../index.css";
+import Person from "./person_box";
 
 const About = () => {
 
-  console.log("called");
+  let person_data = [
+    {
+      link: "https://linkedin.com/in/karnavpopat",
+      title: "Firstname Lastname",
+      subtitle: "Editor-in-Chief",
+      image: "./assets/img/main.jpg"
+    },
+    {
+      link: "https://linkedin.com/in/karnavpopat",
+      title: "Firstname Lastname",
+      subtitle: "Managing Editor",
+      image: "./assets/img/main.jpg"
+    },
+    {
+      link: "https://linkedin.com/in/karnavpopat",
+      title: "Firstname Lastname",
+      subtitle: "Editor",
+      image: "./assets/img/main.jpg"
+    },
+  ];
+
+  let person_list = [];
+  for (let person of person_data) {
+    person_list.push(<Person person={person} />);
+  }
 
   return (
     <div>
@@ -38,8 +63,12 @@ const About = () => {
           The views expressed in this publication or the website are those of
           the individual authors or speakers and do not necessarily reflect the
           position or policy of AUER staff or Ashoka University’s Economics
-          Department and faculty in general.{" "}
+          Department and faculty in general.
         </p>
+
+        <br/><br/><br/>
+        <h2><span className="underlined">The Team</span></h2>
+        <div className="article_grid">{person_list}</div>
       </div>
     </div>
   );

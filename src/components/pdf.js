@@ -12,7 +12,7 @@ function PDFView() {
   return (
     <div>
       <Document
-        file="vol1.pdf"
+        file={"./assets/pdf/vol1.pdf"}
         onLoadSuccess={onDocumentLoadSuccess}
       >
         <Page pageNumber={pageNumber} />

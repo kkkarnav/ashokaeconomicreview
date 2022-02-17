@@ -8,7 +8,7 @@ const Article = (props) => {
   return (
     <div className="article_box">
         <a href={props.article.link}>
-          <img src="./assets/img/main.jpg" width="300"/>
+          <img src="./assets/img/main.jpg"/>
         </a>
         <p style={{marginBottom: "10px"}}>
           <br></br>

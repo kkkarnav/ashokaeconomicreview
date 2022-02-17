@@ -67,13 +67,6 @@ const Articles = () => {
       content: "content3",
     },
   ];
-  useEffect(() => {
-    fetch("/api/time")
-      .then((res) => res.json())
-      .then((data) => {
-        setCurrentTime(data.time);
-      });
-  }, []);
 
   let article_list = [];
   for (let article of article_data) {

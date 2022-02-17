@@ -9,7 +9,7 @@ const Header = () => {
         <h1 className="hero_text">Ashoka University Economic Review</h1>
         
         <span className="subtitle">
-          Ashoka University's Premier Student Run Economics Newspaper
+          Ashoka University's Premier Student Run Economics Journal
         </span>
         {/*<span><Subscribe /></span>*/}
 
@@ -17,8 +17,8 @@ const Header = () => {
 
             <div className="single-line"></div>
 
-            <li><a href="/">Home</a></li>
-            <li><a href="/articles">Articles</a></li>
+            <li><a href="/">Journal</a></li>
+            <li><a href="/articles">Archive</a></li>
             <li><a href="/submit">Submit</a></li>
             <li><a href="/about">About</a></li>
         </ul>
